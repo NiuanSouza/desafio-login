@@ -89,6 +89,17 @@ EMAIL_HOST_USER = 'seuemail@mail.com'  # Endereço do Email
 EMAIL_HOST_PASSWORD = 'suasenha'  # Senha do Email ou senha de aplicativo
 ```
 
+No arquivo **views.py** dentro da pasta `users`, adicione o e-mail usado:
+
+```python
+    # Envia um email de boas-vindas
+    subject = 'Bem-vindo ao nosso site!'
+    message = f'Olá {username},\n\nVocê foi registrado no desafio técnico da Fidelity!!'
+    from_email = 'seuemail@gmail.com'  # Este deve ser o mesmo email configurado no settings.py
+    recipient_list = [email]
+    send_mail(subject, message, from_email, recipient_list)
+```
+
 ### 6️⃣ Execute o servidor Django
 ```sh
 python manage.py runserver
