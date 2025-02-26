@@ -28,7 +28,7 @@ def register(request):
         # Envia um email de boas-vindas
         subject = 'Bem-vindo ao nosso site!'
         message = f'Olá {username},\n\nVocê foi registrado no desafio técnico da Fidelity!!'
-        from_email = 'seuemail@gmail.com'  # Este deve ser o mesmo email configurado no settings.py
+        from_email = 'seuemail@mail.com'  # Este deve ser o mesmo email configurado no settings.py
         recipient_list = [email]
 
         send_mail(subject, message, from_email, recipient_list, fail_silently=False)
@@ -75,7 +75,7 @@ def login(request):
             
             auth_login(request, user)  # Usando auth_login para evitar conflito de nomes
             messages.success(request, f'Bem vindo, {user.username}!')
-            return redirect('index')
+            return redirect('menu')
         else:
             messages.warning(request, "Senha inválida")
             return render(request, 'users/login.html', {'email': email})
@@ -91,3 +91,7 @@ def logout_view(request):
     logout(request)
     messages.success(request, 'Você saiu com sucesso.')
     return redirect('index')
+
+@login_required
+def menu(request):
+    return render(request, 'users/menu.html')
