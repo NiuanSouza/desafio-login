@@ -29,11 +29,15 @@ Este projeto é um sistema de autenticação desenvolvido com o Framework Django
 
 ### ✨ Extras
 - Envio de um e-mail confirmando o cadastro.
-- **Navbar** com Logo indicando "Index" e dois botões que variam dependendo se o usuário está logado ou não.
-  - **Não Logado:** Botões "Login" e "Registro" disponíveis levando a essas telas.
-  - **Logado:** Botão "Perfil" e "Sair".
-    - **Perfil:** Exibe o nome do usuário e e-mail.
-    - **Sair:** Faz logout do sistema.
+- **Navbar** com:
+  - **Logo**:
+    - **Autenticado:** Redireciona para o **Menu**.
+    - **Não autenticado:** Redireciona para o **Index**.
+  - **Botões variáveis conforme autenticação:**
+    - **Não Logado:** Botões "Login" e "Registro" disponíveis levando a essas telas.
+    - **Logado:** Botão "Perfil" e "Sair".
+      - **Perfil:** Exibe o nome do usuário e e-mail.
+      - **Sair:** Faz logout do sistema.
 - Tela inicial **Index** com botão para acesso ao Admin nativo do Django.
 
 ## 🛠 Tecnologias Utilizadas
