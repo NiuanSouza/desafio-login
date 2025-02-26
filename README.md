@@ -44,9 +44,7 @@ Este projeto é um sistema de autenticação desenvolvido com o Framework Django
 - **Django** - Framework principal
 - **SQLite3** - Banco de dados
 - **Python** - Linguagem principal
-- **HTML/CSS** - Estruturação e estilização das telas
-
-###
+- **HTML/CSS/BootStrap** - Estruturação e estilização das telas
 
 ## 🛠 Pré-Requisitos
 - Python intalador
