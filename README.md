@@ -46,6 +46,11 @@ Este projeto é um sistema de autenticação desenvolvido com o Framework Django
 - **Python** - Linguagem principal
 - **HTML/CSS** - Estruturação e estilização das telas
 
+## 🛠 Pré-Requisitos
+- Python intalador
+- Prompt de comando
+- Git instalado, opicional caso queira utilizar o "git clone", se não é possivel só baixar o reposítório.
+
 ## 🚀 Instalação e Execução
 
 ### 1️⃣ Clone este repositório ou baixe esse repositório.
