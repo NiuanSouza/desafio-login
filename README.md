@@ -78,11 +78,11 @@ No arquivo **settings.py** dentro da pasta `setup`, configure as credenciais do 
 
 ```python
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'  # Servidor SMTP do Gmail
+EMAIL_HOST = 'smtp.mail.com'  # Servidor SMTP
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'seuemail@gmail.com'  # Endereço do Gmail
-EMAIL_HOST_PASSWORD = 'suasenha'  # Senha do Gmail ou senha de aplicativo
+EMAIL_HOST_USER = 'seuemail@mail.com'  # Endereço do Email
+EMAIL_HOST_PASSWORD = 'suasenha'  # Senha do Email ou senha de aplicativo
 ```
 
 ### 6️⃣ Execute o servidor Django
