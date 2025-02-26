@@ -95,7 +95,7 @@ No arquivo **views.py** dentro da pasta `users`, adicione o e-mail usado:
     # Envia um email de boas-vindas
     subject = 'Bem-vindo ao nosso site!'
     message = f'Olá {username},\n\nVocê foi registrado no desafio técnico da Fidelity!!'
-    from_email = 'seuemail@gmail.com'  # Este deve ser o mesmo email configurado no settings.py
+    from_email = 'seuemail@mail.com'  # Este deve ser o mesmo email configurado no settings.py
     recipient_list = [email]
     send_mail(subject, message, from_email, recipient_list)
 ```
