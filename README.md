@@ -52,9 +52,9 @@ Este projeto é um sistema de autenticação desenvolvido com o Framework Django
 ```sh
 git clone https://github.com/NiuanSouza/desafio-login.git
 
-cd "Django Login and Register System"
-
 cd desafio-login
+
+cd "Django Login and Register System"
 ```
 
 ### 2️⃣ Crie e ative um ambiente virtual
