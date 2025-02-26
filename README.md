@@ -80,7 +80,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Aplique as migrações do banco de dados
+### 4️⃣ Aplique as migrações do banco de dados, caso seja necessário
 ```sh
 python manage.py migrate
 ```
